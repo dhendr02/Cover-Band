@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('images/elvis.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    
+    .header_container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: red;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-bottom: 2px solid #ccc;
+        flex-wrap: wrap; 
+    }
+
+    .band_name {
+        font-size: 1.5em;
+        font-weight: bold;
+        flex: 1 1 auto; 
+        color: white;
+    }
+
+    .band_tag_line {
+        margin-top: 120px; 
+        text-align: center;
+        font-size: 1.2em;
+        background-color: rgba(255, 0, 0, 0.8); 
+        padding: 10px 20px; 
+        color: white;
+        width: fit-content; 
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+    }
+    
+    .site_navigation {
+        position: fixed;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: black;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .site_navigation a {
+        color: white;
+        font-size: 1.1em;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    .site_navigation a:hover {
+        color: #FFD700;
+    }
+
+    
+    .content_container {
+        margin: 140px 20px 20px 20px; 
+    }
+
+    .video_container {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .upcoming_events {
+        width: 300px; 
+        background-color: red;
+        margin: 20px; 
+        border-radius: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .events_list {
+        text-align: left;
+        padding-left: 20px;
+        list-style-type: disc;
+    }
+
+    .events_list li {
+        margin-bottom: 10px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="header_container">
+        <div class="band_name">
+            Dan Fontaine & The Memphis Sun Mafia Band
+        </div>
+    </div>
+
+    <div class="site_navigation">
+        <a href="homepage.html">Home</a>
+        <a href="bios.html">Biography</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="setlist.html">Setlist</a>
+    </div>
+
+    <div class="band_tag_line">
+        New England's Premier Elvis Presley Tribute Band
+    </div>
+    
+    <div class="content_container">
+        <div class="video_container">
+            <iframe width="1200" height="630" src="https://www.youtube.com/embed/z5jfucDWKUI?si=ADb6_X42_s4Lkxbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="upcoming_events">
+            <h1>Upcoming Events</h1>
+            <ol class="events_list">
+                <li> Sunday, October 13 @ 2:30PM - AutumnFest 2024: Main Stage</li>
+                <li> Friday, October 18 @ 6:30PM - SOLO: Dan Fontaine LIVE</li>
+                <li> Sunday, October 20 @ 5:00PM - "Viva Las Elvis: The Concert Years" | The Music Room: Cape Cod</li>
+                <li> Sunday, November 3 @ 2:00PM - SOLO: Dan Fontaine LIVE | The Alley Theatre</li>
+                <li> Friday, November 8 @ 7:00PM - "Viva Las Elvis: From Sun To Vegas" | Marilyn Rodman Performing Arts Center | Foxborough, MA</li>
+                <li> Saturday, November 9 @ 8:00PM - "King & Cash: Night of Legends"</li>
+                <li> Saturday, November 16 @ 7:00PM - "Good Rockin' Tonight" | The Egg NY</li>
+                <li> Friday, November 22 - "Viva Las Elvis" | The Phoenician Restaurant</li>
+                <li> Saturday, November 23 @ 8:30PM - "Viva Las Elvis" | Halligans</li>
+                <li> Friday, November 29 @ 8:00PM - "Viva Las Elvis: A Vegas Christmas" | Post 440</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

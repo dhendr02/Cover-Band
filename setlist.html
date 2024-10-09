@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/elvis.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .header_container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: red;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 2px solid #ccc;
+            flex-wrap: wrap;
+        }
+
+        .band_name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+        }
+
+        .site_navigation {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 999;
+        }
+
+        .site_navigation a {
+            color: white;
+            font-size: 1.1em;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .site_navigation a:hover {
+            color: #FFD700;
+        }
+
+        .content-container {
+            padding-top: 160px; 
+            margin: 20px;
+        }
+
+        .accordion-btn {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .accordion-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .accordion-content {
+            background-color: #f9f9f9;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            padding: 0 15px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .accordion-content p {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header_container">
+        <div class="band_name">
+            Dan Fontaine & The Memphis Sun Mafia Band
+        </div>
+    </div>
+
+    <div class="site_navigation">
+        <a href="homepage.html">Home</a>
+        <a href="bios.html">Biography</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="setlist.html">Setlist</a>
+    </div>
+
+    <div class="content-container">
+        <h2 style="color:red">Setlist</h2>
+        <div class="accordion">
+            <button class="accordion-btn">Blue Suede Shoes</button>
+            <div class="accordion-content">
+                <p>Duration: 3:00</p>
+                <p>Opening number to kick off the show.</p>
+            </div>
+
+            <button class="accordion-btn">Can't Help Falling in Love</button>
+            <div class="accordion-content">
+                <p>Duration: 3:02</p>
+                <p>A beautiful ballad with an acoustic intro for an intimate moment with the audience.</p>
+            </div>
+
+            <button class="accordion-btn">Heartbreak Hotel</button>
+            <div class="accordion-content">
+                <p>Duration: 2:45</p>
+                <p>The classic hit, featuring an electrifying guitar solo.</p>
+            </div>
+
+            <button class="accordion-btn">Jailhouse Rock</button>
+            <div class="accordion-content">
+                <p>Duration: 2:35</p>
+                <p>An energetic performance designed to get everyone on their feet dancing.</p>
+            </div>
+
+            <button class="accordion-btn">Suspicious Minds</button>
+            <div class="accordion-content">
+                <p>Duration: 4:22</p>
+                <p>A powerful rendition of this classic, complete with emotional highs and incredible instrumentation.</p>
+            </div>
+
+            <button class="accordion-btn">Hound Dog</button>
+            <div class="accordion-content">
+                <p>Duration: 2:20</p>
+                <p>Fast-paced number to keep the energy levels high. A favorite among fans.</p>
+            </div>
+
+            <button class="accordion-btn">Love Me Tender</button>
+            <div class="accordion-content">
+                <p>Duration: 3:15</p>
+                <p>A slower tempo song, with beautiful harmonies and a heartfelt delivery.</p>
+            </div>
+
+            <button class="accordion-btn">Viva Las Vegas</button>
+            <div class="accordion-content">
+                <p>Duration: 2:24</p>
+                <p>A lively, upbeat track that captures the excitement of Vegas life.</p>
+            </div>
+
+            <button class="accordion-btn">Burning Love</button>
+            <div class="accordion-content">
+                <p>Duration: 2:50</p>
+                <p>A rock and roll classic with high energy vocals and strong instrumental backing.</p>
+            </div>
+
+            <button class="accordion-btn">In the Ghetto</button>
+            <div class="accordion-content">
+                <p>Duration: 3:05</p>
+                <p>A poignant ballad telling a story that deeply resonates with the audience.</p>
+            </div>
+
+            <button class="accordion-btn">A Little Less Conversation</button>
+            <div class="accordion-content">
+                <p>Duration: 2:30</p>
+                <p>Ending the set on a high note with this upbeat, high-energy classic to leave the audience wanting more.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.accordion-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+
+                    document.querySelectorAll('.accordion-content').forEach((otherContent) => {
+                        if (otherContent !== content) {
+                            otherContent.style.maxHeight = null;
+                        }
+                    });
+
+                    content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
